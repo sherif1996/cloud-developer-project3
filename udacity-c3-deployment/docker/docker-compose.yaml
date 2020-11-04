@@ -11,7 +11,7 @@ services:
   backend-user:
     image: sherifgamil/udacity-restapi-user
     volumes:
-      - $HOME/.aws:/root/.aws
+      - $MYHOME/.aws:/root/.aws
     environment:
       POSTGRESS_USERNAME: $POSTGRESS_USERNAME
       POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD 
@@ -21,6 +21,8 @@ services:
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
+      AWS_ACCESSKEY: $AWS_ACCESSKEY
+      AWS_SECRETACCESSKEY: $AWS_SECRETACCESSKEY
       URL: "http://localhost:8100"
   backend-feed:
     image: sherifgamil/udacity-restapi-feed
@@ -35,6 +37,8 @@ services:
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
+      AWS_ACCESSKEY: $AWS_ACCESSKEY
+      AWS_SECRETACCESSKEY: $AWS_SECRETACCESSKEY
       URL: "http://localhost:8100"
   frontend:
     image: sherifgamil/udacity-frontend
