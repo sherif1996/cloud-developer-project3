@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  URL: http://localhost:8100
+  AWS_BUCKET: udagram-sherif-dev
+  AWS_PROFILE: default
+  AWS_REGION: eu-west-2
+  JWT_SECRET: helloworld
+  POSTGRESS_DB: udagramsherifdev
+  POSTGRESS_HOST: udagramsherifdev.cbv3mymvijrk.eu-west-2.rds.amazonaws.com
+metadata:
+  name: env-config
