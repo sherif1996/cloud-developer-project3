@@ -8,3 +8,5 @@ In this project I converted the application "Udagram" from being a monolithic ap
 
 3- Running the containers in a kubernetes cluster 
 
+
+4- Using TravisCI as a continuous integration tool
