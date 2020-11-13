@@ -15,9 +15,9 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: sherifgamil/udacity-restapi-feed
+      - image: sherifgamil/udacity-restapi-feed:latest
         name: backend-feed
-        imagePullPolicy: IfNotPresent  
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"

@@ -15,9 +15,9 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: sherifgamil/udacity-restapi-user
+      - image: sherifgamil/udacity-restapi-user:latest
         name: backend-user 
-        imagePullPolicy: IfNotPresent  
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"

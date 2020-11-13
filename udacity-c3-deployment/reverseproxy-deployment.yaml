@@ -16,11 +16,11 @@ spec:
         service: reverse-proxy
     spec:
       containers:
-      - image: sherifgamil/reverseproxy
+      - image: sherifgamil/reverseproxy:latest
         name: reverse-proxy
         #command: [ "sleep" ]
         #args: [ "infinity" ]
-        imagePullPolicy: IfNotPresent          
+        imagePullPolicy: Always          
         resources:
           requests:
             memory: "64Mi"

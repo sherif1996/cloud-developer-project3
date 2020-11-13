@@ -25,6 +25,7 @@ udacity-c2-basic-server/
 udacity-c2-restapi/
 aws-secret.yaml
 env-secret.yaml
+env-config.yaml
 
 node_modules/
 tmp/
